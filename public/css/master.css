@@ -1,0 +1,114 @@
+@import url(../Build/Cesium/Widgets/widgets.css);
+html, body, #cesiumContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.cesium-cesiumMenu {
+    border-radius: 5px;
+    -webkit-transition: width ease-in-out 0.25s;
+    -moz-transition: width ease-in-out 0.25s;
+    transition: width ease-in-out 0.25s;
+    background: rgba(48, 51, 54, 0.8);
+    border: 1px solid #444;
+    color: #edffff;
+    display: inline-block;
+    position: relative;
+    padding: 4px 12px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+.cesium-cesiumMenu-button {
+    text-align: center;
+    font-size: 11pt;
+}
+.cesium-cesiumMenu-visible .cesium-cesiumMenu-button {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 3px;
+}
+.cesium-cesiumMenu input:enabled, .cesium-cesiumMenu-button {
+    cursor: pointer;
+}
+.cesium-cesiumMenu-visible {
+    width: 185px;
+    height: auto;
+}
+.cesium-cesiumMenu-hidden {
+    width: 122px;
+    height: 17px;
+}
+.cesium-cesiumMenu-show {
+    max-height: 500px;
+}
+.cesium-cesiumMenu-hide {
+    max-height: 0;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.cesium-cesiumMenu-dropDown {
+    margin: 5px 0;
+    font-family: sans-serif;
+    font-size: 10pt;
+    width: 185px;
+}
+.cesium-cesiumMenu-frustumStats {
+    padding-left: 10px;
+    padding: 5px;
+    background-color: rgba(80, 80, 80, 0.75);
+}
+.cesium-cesiumMenu-pickButton {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid #444;
+    color: #edffff;
+    border-radius: 5px;
+    padding: 3px 7px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 auto;
+}
+.cesium-cesiumMenu-pickButton:focus {
+    outline: none;
+}
+.cesium-cesiumMenu-pickButton:active, .cesium-cesiumMenu-pickButtonHighlight {
+    color: #000;
+    background: #adf;
+    border-color: #fff;
+    box-shadow: 0 0 8px #fff;
+}
+.cesium-cesiumMenu-center {
+    text-align: center;
+}
+.cesium-cesiumMenu-sectionHeader {
+    font-weight: bold;
+}
+.cesium-cesiumMenu-pickSection {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+.cesium-cesiumMenu-section {
+    margin-bottom: 10px;
+    -webkit-transition: max-height 0.25s;
+    -moz-transition: max-height 0.25s;
+    transition: max-height 0.25s;
+}
+.cesium-cesiumMenu-toggleSwitch {
+    padding: 3px;
+    cursor: pointer;
+}
+.cesium-cesiumMenu-tileText {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+.cesium-cesiumMenu-relativeText {
+    padding-top: 10px;
+}
